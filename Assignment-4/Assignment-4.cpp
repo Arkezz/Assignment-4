@@ -34,7 +34,7 @@ int main()
 	l.insert(e8.getName(), e8);	c.insert(e8.getName(), e8);
 	l.insert(e9.getName(), e9);	c.insert(e9.getName(), e9);
 
-	//Remove fatma from the hash table
+	//Remove fatma from the hash table for testing remove function
 	//l.remove("Fatma");
 	//c.remove("Fatma");
 

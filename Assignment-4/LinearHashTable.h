@@ -34,6 +34,18 @@ public:
 		int index = hash(key);
 		if (count == size) {
 			cout << "Table is full" << endl;
+			//Double the size of the table
+			size *= 2;
+			T* tempTable = new T[size];
+			K* tempKeys = new K[size];
+			for (int i = 0; i < count; i++) {
+				tempTable[i] = table[i];
+				tempKeys[i] = keys[i];
+			}
+			delete[] table;
+			delete[] keys;
+			table = tempTable;
+			keys = tempKeys;
 		}
 		else {
 			if (keys[index] != "") {
