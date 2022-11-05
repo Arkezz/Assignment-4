@@ -37,13 +37,13 @@ public:
 		}
 		else {
 			if (keys[index] != "") {
+				numCollisions++;
+			}
+			while (keys[index] != "") {
 				index++;
 				if (index == size) {
 					index = 0;
 				}
-			}
-			else {
-				numCollisions++;
 			}
 			keys[index] = key;
 			table[index] = value;
